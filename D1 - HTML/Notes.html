@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+<body>
+---------------------------------------
+    <h1><u>Text Types</u></h1>
+
+    normal text <br>
+    <strong>Bold text</strong><br>
+    <em>Italic text</em><br>
+    <mark>Highlited</mark><br>
+    <del> deleted text</del><br>
+    <u>Underline text</u><br>
+    (a+b)<sup>2</sup><br>
+    H<sub>2</sub>O
+
+<br>--------------------------------------
+    <h1><u>List:</u></h1>
+    order list -> 
+    <ol>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Data Structure</li>
+        <li>MySQL</li>
+    </ol>
+    <ol type="i">
+        <li>C++</li>
+        <li>Java</li>
+        <li>Data Structure</li>
+        <li>MySQL</li>
+    </ol>
+
+    <br>--------------------------------------
+    <h1>defination list</h1> 
+    <dl>
+        <dt>What is C++</dt>
+        <dd>C++ is a programming language</dd>
+    </dl>
+
+
+ <br>--------------------------------------
+
+    <h1>Nested List</h1>
+    <ol>
+        <li>C++</li>
+        <li>Java</li>
+        <ul>
+            <li>Java Swing</li>
+            <li>Java FX</li>
+        </ul>
+        <li>DSA</li>
+    </ol>
+
+
+ <br>--------------------------------------
+
+<h1>linking</h1>
+
+    Hiper link ->
+    <a target="_blank" href = "https://www.youtube.com/watch?v=gqvrn5R8tzc&list=PLgH5QX0i9K3pShEf_RCcVqPKxFm7sOLVD&index=7">
+        youtube
+    </a><br><br>
+
+    relative link / navigation:
+    <nav>
+        <a href="Porfolio.html">Home</a>
+        <a href="Contact.html">Contact</a>
+     </nav> <br>
+
+     direct contact -> <br>
+
+     <a href="tel:01617852079">Phone Me</a>
+     <a href="mailto:rafi.shariar619@gmail.com">Email ME</a>
+
+
+     <br>--------------------------------------
+
+     <br><h1>adding Image </h1> <br>
+     <img src="./img1.jpg" height="200" width="200" alt = "My image">
+
+
+<br>--------------------------------------
+
+     <br><h1>table</h1><br>
+     <table border="1" cellpadding = "5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Language</th>
+                <th>Proficiency</th>
+            </tr>
+        </thead>
+        <body>
+            <tr>
+                <td>Java</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>90%</td>
+            </tr>
+
+        </body>
+     </table>
+
+     <label for="communication">communication : </label>
+     <progress id="communication" value="75" max="100"></progress>
+
+
+<br>--------------------------------------
+
+
+
+     <br><h1>Form</h1><br>
+     <form action="https://formspree.io/f/xvgogopo" method="POST">
+        <label for="name">Name : </label>
+        <input type="text" id="name" name ="name" required>
+        <br>
+        <br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name = "email" required/>
+        <br><br>
+        <label for="date">Date :</label>
+        <input type="date" id="date" name = "date" required/>
+        <br><br>
+
+        <label for="select">You are :</label>
+        <select name = "select" id="select">
+            <option value="Student">Student</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Teacher">Teacher</option>
+         
+        </select>
+
+        <br><br>
+        <label for="image">Upload Documemnts :</label>
+        <input type="file" id="image" name = "image" />
+        <br><br>
+      
+        <br><br>
+        <label for="massage">Massage</label><br>
+        <textarea name="massage" id="massage" cols="50" rows="20"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+
+    </form><br>
+
+
+<br>--------------------------------------
+<br><h1>Vedio</h1><br>
+     
+    <video width="300" controls>
+        <source src="./Practice 1/Assets/vid1.mp4" type="video/mp4">
+        your browser dont support this type of vedio
+    </video>
+
+
+    <br>--------------------------------------
+    <br><h1>Map</h1><br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.732420070183!2d90.34938139999998!3d23.792541000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0ec29b0d4a5%3A0x630d707c5d101e05!2s2nd%20Colony%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1729411876679!5m2!1sen!2sbd" title = "Map" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<br>--------------------------------------
+<br><h1>Advance Form</h1><br>
+<form action="https://formspree.io/f/xvgogopo" method="POST">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name : </label>
+    <input type="text" id="name" name ="name" required>
+    <br>
+    <br>
+    <label for="email">Email :</label>
+    <input type="email" id="email" name = "email" required/>
+    <br><br>
+    <label for="date">Date :</label>
+    <input type="date" id="date" name = "date" required/>
+    <br>
+    </fieldset>
+    <br>
+
+    <label for="select">You are :</label>
+    <select name = "select" id="select">
+        <option value="Student">Student</option>
+        <option value="Software Engineer">Software Engineer</option>
+        <option value="Teacher">Teacher</option>
+     
+    </select>
+
+    <br><br>
+    <label for="image">Upload Documemnts :</label>
+    <input type="file" id="image" name = "image" />
+    <br><br>
+
+    <label for="volume">Range :</label>
+    <input type="range" id="volume" name = "volume" min="0" max="100" value="30"/>
+    <br><br>
+
+
+    <label for="List">List :</label>
+    <input list="languages" id="List" name = "volume" />
+    <datalist id = "languages">
+        <option value="C++"></option>
+        <option value="Java"></option>
+        <option value="Python"></option>
+    </datalist>
+    <br><br>
+
+
+  
+    <br><br>
+    <label for="massage">Massage</label><br>
+    <textarea name="massage" id="massage" cols="50" rows="20"></textarea>
+    <br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Clear</button>
+
+</form><br>
+
+
+    
+</body>
+</html>
