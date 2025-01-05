@@ -5,7 +5,7 @@
 
 .navbar{
     display: flex;
-    /* background-color: aquamarine; */
+    background-color: white;
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
@@ -14,6 +14,13 @@
     padding-top: 15px;
     padding-bottom: 15px;
     box-shadow: 10px 5px 5px rgb(229, 222, 222);
+
+    position: fixed; /* Keeps the navbar fixed to the viewport */
+    top: 0; /* Aligns the navbar to the top of the page */
+    left: 0; /* Ensures the navbar starts at the left edge */
+    right: 0; /* Ensures the navbar spans the full width */
+    z-index: 1000;
+    
 
     
 }
@@ -24,7 +31,7 @@
     color: rgb(233, 115, 72);
     font-size: 15px;
 }
-img{
+.mainLogo{
     height: 50px;
 }
 
@@ -54,7 +61,7 @@ a:hover{
     padding: 100px;
     font-size: 12px;
     font-weight: 600;
-    width: 300px;
+    width: 500px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -63,21 +70,24 @@ a:hover{
     justify-content: center;
     align-items: center;
 
+    padding-top: 200px;
+
 
 }
 #Fgrid>form .last-element {
     grid-column: span 2;
-    height: 28px;
+    height: 32px;
     border: 0px;
     border-radius: 3px;
     font-size: 11px;
-    font-weight: 500;
-    background-color: rgb(147, 186, 240);
+    font-weight: 600;
+    background-color: rgb(5, 139, 12);
+    color: white;
      /* Make the last element span both columns */
 }
 
 input,select{
-    width: 150px;
+    width: 220px;
     font-size: 10px;
     height: 20px;
     padding-left: 10px;
@@ -92,6 +102,88 @@ input,select{
 }
 
 #ChooseClass{
-    width: 166px;
+    width: 233px;
     height: 24px;
+}
+
+/* types decorarion */
+.types{
+    /* background: #c6bcbc; */
+    display: flex;
+    padding: 100px;
+    gap: 30px;
+    justify-content: space-between;
+    font-size: 11px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.typelogo{
+    height: 150px;
+    width: 150px;
+}
+.tdiv{
+    width: 200px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+/* part 2 decoration */
+.part2{
+    display: flex;
+    gap: 50px;
+    padding: 100px;
+}
+#img5{
+    height: 350px;
+}
+
+#paras{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+    text-align: justify;
+    color: rgb(24, 86, 24);
+}
+
+#payemntmethod{
+    height: 100px;
+    padding-left: 350px;
+
+}
+
+#par6{
+    font-weight: 500;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    /* border : 2px solid rgb(151, 149, 149); */
+    text-align:center;
+    
+    margin-bottom: 15px;
+    box-shadow: 2px 2px  rgb(35, 98, 51);
+
+    padding-left: 150px;
+    padding-right: 150px;
+    color: rgb(65, 65, 65);
+}
+
+footer{
+    display: flex;
+    gap: 100px;
+    padding: 40px;
+    justify-content: space-evenly;
+}
+
+.footerlogo{
+    height: 60px;
+}
+#terms{
+    font-size: 13px;
+    font-weight: 600;
+    color:  rgb(35, 98, 51);
 }
