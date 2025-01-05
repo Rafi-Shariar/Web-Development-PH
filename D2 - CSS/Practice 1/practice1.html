@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="image.png" alt="logo">
+            <h3>Bangladesh Railway</h3>
+        </div>
+        <div class="navs">
+            <a href="#">home</a>
+            <a href="#">Verify Ticket</a>
+            <a href="#">Train Information</a>
+            <a href="#">Contact us</a>
+            <a href="#">User</a>
+        </div>
+    </div>
+
+    <div id="Fgrid">
+        <form action="submit">
+            <div >
+                <label for="from">From</label><br>
+                <input type="text" placeholder="from station" name="from">
+            </div>
+            <div >
+                <label for="to">To</label><br>
+                <input type="text" placeholder="To station" name="to">
+            </div>
+            <div >
+                <label for="date">Choose a date</label><br>
+                <input type="date" placeholder="pick a date" name="date">
+            </div>
+            <div >
+                <label for="ChooseClass">Choose class</label><br>
+                <select name="ChooseClass" id="ChooseClass">
+                    <option value="ChooseAClass">Choose a class</option>
+                    <option value="AC_B">AC_B</option>
+                    <option value="AC_S">AC_S</option>
+                    <option value="ShovonChair">Shovon Chair</option>
+                    <option value="Snighdha">Snighdha</option>
+                </select>
+            </div>
+            <button class="last-element" type="submit">SEARCH TRAIN</button>
+        </form>
+    </div>
+    
+
+
+    
+
+</div>
+    
+</body>
+</html>
