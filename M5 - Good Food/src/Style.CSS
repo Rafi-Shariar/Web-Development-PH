@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rethink Sans", serif;
+}
+button{
+    width: 226px;
+    height: 52px;
+    background: rgb(82, 195, 3);
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+#Banner{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #d5d2d2;
+
+    /* height: 735px;
+    width: 1517px; */
+    height: 720px;
+
+     background: linear-gradient(0.00deg, rgb(9, 9, 9) 2.884%,rgba(16, 16, 16, 0) 101.034%),url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    margin-bottom: 30px;
+   
+}
+
+#intro{
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+#slogan{
+    font-size: 52px;
+    font-weight: 700;
+    margin-left: 380px;
+    margin-right: 380px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: white;
+}
+
+#msg{
+    margin-left: 360px;
+    margin-right: 360px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    line-height: 28px;
+}
+
+.cardContent{
+    width: 340px;
+    height: 550px;
+    /* background: #c6bdbd; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+.cardContent .foodimage{
+    width: 340px;
+
+}
+
+#pizzabarg{
+    /* padding: 26px 12px; */
+    width: 150px;
+    height: 25px;
+    border-radius: 8px;
+    background: rgba(82, 195, 3, 0.15);
+    text-align: center;
+
+    font-size: 19px;
+    padding: 10px 28px 10px 28px;
+    font-weight: 700;
+}
+
+.cardContent h1{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#cardDetails{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#cardContents{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#Card{
+    width: 1056px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* background: #7d6c6c; */
+    margin-left: 240px;
+    margin-top: 120px;
+    margin-bottom: 148px;
+}
+
+#Card p{
+    font-size: 18px;
+    opacity: .8;
+}
+
+#Card h1{
+    font-size: 40px;
+    width: 552px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+#AboutUs{
+    display: flex;
+    height: 537px;
+    background: #a18e8e;
+}
+
+#foodimg img{
+    height: 537px;
+}
+#aboutusContents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 72px;
+}
+
+#aboutusContents h1{
+    width: 630px;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
