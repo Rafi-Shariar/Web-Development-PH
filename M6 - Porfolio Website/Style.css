@@ -136,11 +136,14 @@ main{
     flex-direction: column;
     margin-left: 230px;
     margin-right: 230px;
+    justify-content: center;
+    align-items: center;
 }
 
 main > section{
     margin-top: 130px;
     margin-bottom: 130px;
+    
 
 }
 /* 
@@ -153,6 +156,7 @@ About Me Section */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin-left: 200px; */
 }
 
 .AboutMe-Contents{
@@ -202,10 +206,10 @@ About Me Section */
    
   
 }
-.skills div{
+.skill-contents{
     padding: 20px;
-
     box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    
 }
 
 .skills h3{
@@ -213,11 +217,56 @@ About Me Section */
 }
 
 .skills p{
-    width: 909px;
+
     text-align: start;
     font-size: 16px;
     line-height: 28px;
     margin-top: 20px;
 }
 
+/* Summary Details */
 
+.summary h2{
+    font-size: 30px;
+    color: rgba(71, 71, 71, 1);
+}
+.summary-content{
+    /* background: #b9a8a8; */
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+.summary-details h2{
+    font-size: 25px;
+    font-weight: 700;
+    color:rgba(71, 71, 71, 1) ;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+}
+
+.summary-details .p2{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(117, 117, 117, 1);
+    margin-bottom: 20px;
+}
+.summary-details p{
+    font-size: 16px;
+    color: rgba(117, 117, 117, 1);
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+.br{
+    border-bottom: 2px solid rgba(209, 209, 209, 1);
+}
+
+.summary-all{
+    display: flex;
+    gap: 20px;
+}
+
+.summary h1{
+    text-align: center;
+    margin-bottom: 113px;
+}
