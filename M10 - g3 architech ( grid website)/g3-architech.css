@@ -15,10 +15,8 @@
 }
 
 
-
 /* Navigation */
 header{
-    
     background: rgba(255, 144, 14, 0.1);
 }
 nav{
@@ -26,9 +24,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-#brand{
-    
-}
+
 nav>h2{
     font-weight: 700;
     font-size: 2.8rem;
@@ -53,6 +49,7 @@ a{
 nav,.banner{
     max-width: 1920px;
     margin: 0px auto;
+    padding: 0 220px;
 }
 nav{
     margin-bottom: 116px;
@@ -93,20 +90,6 @@ nav{
 }
 
 
-@media screen and (max-width:576px) {
-
-    nav{
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav ul{
-        font-size: 1rem;
-        flex-direction: column;
-    }
-    
-}
-
 
 /* feature section */
 
@@ -146,23 +129,109 @@ nav{
     color: rgba(255, 144, 14, 1);
 }
 
+
+/* Features2 */
+.features2{
+    width: 586px;
+    display: flex;
+    gap: 100px;
+    padding: 0 220px;
+}
+.features2-content h2{
+    font-size: 2.8rem;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.cards-content{
+    width: 586px;
+    height: 170px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+
+#experience{
+    background: rgba(255, 144, 14, 1);
+    color: white;
+    width: 300px;
+    border-radius: 8px;
+    border: 0;
+    padding: 46px;
+    text-align: center;
+
+    margin-left: -50px;
+    margin-top: -100px;
+
+
+}
+
+#experience > span{
+    font-weight: 700;
+    font-size: 4rem;
+    color: white;
+}
+
+
+
+
 @media screen and (max-width:576px) {
 
-
-    .feature{
-        flex-direction: column;
-    }
-
-    .feature-imgs{
+    nav{
         display: flex;
         flex-direction: column;
     }
 
+    nav ul{
+        font-size: 1rem;
+        flex-direction: column;
+    }
+
+    nav h2{
+        text-align: center;
+    }
+
+    .feature,.features2{
+        
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .feature-imgs{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* feature2 */
+    .features2{
+        width: 400px;
+    }
+
+    .cards-content{
+        width: 350px;
+        padding: 5px;
+    }
+
     .feature-contents{
+        width: 425px;
        text-align: center;
     }
 
+    .features2{
+        padding: 0 5px;
+    }
 
-   
-    
+    .feature2-contents{
+        width: auto;
+       text-align: center;
+    }
+
+    .archi{
+        width: 100%;
+    }
+
+    #experience{
+        margin-left: 30px;
+    }
+  
 }
