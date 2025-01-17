@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+        .d1,.d2,.d3,.d4,.d5{
+
+            background: #dda7a7;
+            padding: 30px;
+            border: 2px solid red;
+            border-radius: 5px;
+            
+
+        }
+        .d1{
+            grid-area: one;
+        }
+        .d2{
+            grid-area: two;
+        }
+        .d3{
+            grid-area: three;
+        }
+        .d4{
+            grid-area: four;
+        }
+        .d5{
+            grid-area: five;
+        }
+
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "one   one     one     one "
+            "two   three three four"
+            "five five five five"; 
+            gap: 10px;
+
+        }
+
+
+        @media screen and (max-width:576px) {
+            
+            .container{
+                grid-template-areas:
+                "one one"
+                "three three"
+                "two four"
+                "five five";
+            }
+            
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>
+</body>
+</html>

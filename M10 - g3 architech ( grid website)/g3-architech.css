@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    font-family: "Work Sans", serif;
+    color: rgba(19, 19, 19, 1);
+}
+
+/* shared style */
+.txtdec{
+    font-size: 1rem;
+    color:rgba(114, 114, 114, 1) ;
+    line-height: 26px;
+    margin-bottom: 20px;
+
+}
+
+
+
+/* Navigation */
+header{
+    
+    background: rgba(255, 144, 14, 0.1);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#brand{
+    
+}
+nav>h2{
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-top: 50px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-top: 50px;
+}
+
+nav ul li{
+    font-size: 1.2rem;
+    margin-right: 50px;
+
+}
+a{
+    text-decoration: 0;
+}
+
+/* Banner */
+nav,.banner{
+    max-width: 1920px;
+    margin: 0px auto;
+}
+nav{
+    margin-bottom: 116px;
+
+}
+.banner-contents{
+    max-width: 862px;
+    text-align: center;
+}
+
+.banner-contents h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-btn{
+    background: rgba(255, 144, 14, 1);
+    width: 180px;
+    height: 64px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 0;
+    margin-bottom: 30px;
+}
+
+.banner img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (max-width:576px) {
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul{
+        font-size: 1rem;
+        flex-direction: column;
+    }
+    
+}
+
+
+/* feature section */
+
+.feature{
+    max-width: 1920px;
+    margin: 100px auto;
+    
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-contents{
+    width: 537px;
+}
+.feature-imgs{
+    display: grid;
+    grid-template-columns: repeat(2,0fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+
+.feature-contents h2{
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+#FC1{
+
+    font-weight: 400;
+    color: rgba(114, 114, 114, 1);
+
+}
+
+#FC2{
+    color: rgba(255, 144, 14, 1);
+}
+
+@media screen and (max-width:576px) {
+
+
+    .feature{
+        flex-direction: column;
+    }
+
+    .feature-imgs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature-contents{
+       text-align: center;
+    }
+
+
+   
+    
+}
