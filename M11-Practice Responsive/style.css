@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", serif;
+    margin: 0;
+}
+
+/* Hearder-section */
+
+header,main{
+    width: 90%;
+    margin: 0px auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 87px;
+    margin-bottom: 50px;
+    color: rgba(58, 58, 58, 1);
+
+}
+nav h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+nav li{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 34px;
+}
+
+
+
+/* Banner-Section */
+
+.banner-contents{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.banner-txt{
+    width: 582px;
+}
+.banner-txt h3{
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+    color: rgba(58, 58, 58, 1);
+    margin-bottom: 20px;
+}
+.banner-txt button{
+    width: 196px;
+    height: 44px;
+    background: rgba(224, 44, 109, 1);
+    color: aliceblue;
+    border: 0;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+.bg-img{
+   
+}
+.cemera-img{
+   position: absolute;
+   left: 0;
+}
+
+.Banner-imgs{
+    margin-right: 50px;
+    position: relative;
+}
+
+
+main{
+
+    margin-bottom: 50px;
+}
+.sponcers{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    border : 1px solid rgb(190, 188, 188);
+    padding: 10px;
+    margin-top: 10px;
+
+    width: 90%;
+    margin: 30px auto;
+}
+
+
+/* Cards */
+
+.collections{
+    width: 1047px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.card{
+    width: 90%;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.card h3{
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.card h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.card p{
+    color: rgba(120, 120, 133, 1);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+/* //Mobile Device Responsiveness */
+@media screen and (max-width:576px) {
+    header,body{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    nav,.banner-contents,.sponcers{
+        text-align: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    li{
+        display: none;
+    }
+
+    .banner-txt{
+        width: 400px;
+        text-align: center;
+    }
+
+
+    .Banner-imgs img{
+        width: 100%;
+    }
+
+    .sponcers{
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    .collections{
+        width: 95%;
+        margin: 0px auto;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .card{
+        width: 88%;
+        padding: 10px;
+        border: 0;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+}
