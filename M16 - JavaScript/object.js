@@ -5,17 +5,26 @@ const bottle = {
     isclean: false
 }
 */
+
+const mySymble = Symbol("Key1");
+
 const subject = {
     name:'rafi',
     ID:1054,
     chapter:['1st' , '2nd'],
-    //object in object
-    exams:{
+    'number': 16178,
+     //object in object
+     exams:{
         name:'Final Exam',
         marks:40
     },
 
-    'number': 16178
+    [mySymble] : "Mykey"
+
+}
+subject.greeting = function(){
+    console.log(`This subject has 3 credits, ${this.name}`); 
+    
 }
 
 console.log(subject.ID);
@@ -28,8 +37,23 @@ const keys = Object.keys(subject);
 console.log(keys);
 
 const values = Object.values(subject);
-console.log(values);
+// console.log(values);
 
-console.log(subject.exams.marks);
+// console.log(subject.exams.marks);
+
+// // console.log(subject[mySymble]);
+
+console.log(subject.greeting());
+
+
+
+//Combining 2 objects
+const obj1 = { a:"1", b:"2"};
+const obj2 = { c:"3", d:"4"};
+
+const obj3 = Object.assign( {},obj1,obj2);
+const obj4 = Object.assign(...obj1, ...obj2);
+console.log(obj3);
+
 
 
