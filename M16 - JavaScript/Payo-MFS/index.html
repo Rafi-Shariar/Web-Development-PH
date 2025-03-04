@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paayoo - Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-800">
+
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-slate-200">
+
+        <header>
+            <nav class="flex justify-center items-center mt-10">
+                <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10 mt-5">
+                    <img src="./Assets/Rectangle 1.png" alt="" class="w-48 absolute">
+                    <img src="./Assets/Group.png" alt="" class="w-16">
+                </div>
+            </nav>
+        </header>
+
+        <!-- Login Section -->
+        <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+             
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                <form class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label font-bold" >Mobile Number</label>
+                    <input type="number" class="input bg-slate-200 rounded-2xl" placeholder="Enter your number" required/ id="accNum" value="12345678901">
+                    <label class="fieldset-label font-bold">4 Digit Pin</label>
+                    <input type="password" class="input bg-slate-200 rounded-2xl" placeholder="Enter 4 Digit Pin" required/ id="accPass" value="1234">
+                    <button class="btn btn-neutral mt-4 rounded-2xl bg-blue-700 text-white" id="login-btn">Login</button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+    
+
+    <script src="./script/login.js"></script>
+    
+</body>
+</html>
