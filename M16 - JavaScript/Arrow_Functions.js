@@ -1,3 +1,7 @@
+// function mul(id,id){
+//     return id+id;
+// }
+
 const addtwo = (num1,num2) => {
     return num1+num2
 }

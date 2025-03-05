@@ -13,6 +13,11 @@ console.log(frinds.join(" + "));
 const A = "abns";
 console.log(A.includes('a'));
 
+//multiline
+const multiline = `Ami Jani 
+J tumi 
+Aj bhalo aso`;
+console.log(multiline);
 
-//Modern Way
+//Modern & Best Way
 console.log(`What is the sentence ? ${sentence}`);

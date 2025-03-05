@@ -1,21 +1,23 @@
 function print(){
     console.log(`Learning function`);
 }
-print()
+print();
 
 function sum(number1, number2){
     return number1 + number2;
     
 }
-
 let ans = sum(10,2)
 console.log(ans);
 
 
-function getMenu() {
-    console.log("Burger, Pizza, Pasta");
+
+// Setting default parameter 
+function mul(num1=1,num2=2){
+    const muliple = num1 * num2;
+    return muliple;
 }
-getMenu();
+console.log("mul: ", mul(20));
 
 
 
@@ -34,7 +36,7 @@ function handleObject(anyobject){
     
 }
 
-console.log(handleObject(Obj));
+// console.log(handleObject(Obj));
 
 
 //IIFE - Immediateluy Invoked Fuction Expressions
