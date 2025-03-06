@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conceptual - SmartWatch shopping</title>
+
+    <!-- Daisy UI + tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      button{
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="text-slate-700">
+    <div class="w-8/12 mx-auto py-16 flex justify-center">
+      <!-- Container -->
+      <div class="carousel rounded-box w-10/12 bg-slate-100">
+        <!-- Images -->
+        <div class="carousel-item w-1/2">
+          <img src="./images/purple.png" class="w-full" />
+        </div>
+
+        <!-- Details -->
+        <div class="carousel-item w-1/2">
+          <div class="m-5 flex flex-col gap-2">
+            <h1 class="text-3xl font-semibold">Classy Modern Smart Watch</h1>
+
+            <!-- Review Icon -->
+            <p class="text-orange-400">
+              ★★★★☆ <span class="text-slate-500">(5 Reviews)</span>
+            </p>
+
+            <!-- Price -->
+            <div class="flex items-end gap-4">
+              <h2 class="text-xl line-through text-slate-400">$99.00</h2>
+              <h2 class="text-2xl font-semibold">$79.00</h2>
+            </div>
+
+            <!-- Description -->
+            <p class="">
+              Introducing our latest Smartwatch, designed for ultimate
+              convenience and style. Track your fitness goals, monitor your
+              heart rate, receive notifications, and control music—all from your
+              wrist. With a sleek design, long-lasting battery
+            </p>
+
+            <!-- Type & Model -->
+            <div class="mt-4 text-lg">
+              <h3><span class="font-semibold mr-8">Type:</span>Watch</h3>
+              <h3>
+                <span class="font-semibold mr-5">Model:</span>Forerunner 290XT
+              </h3>
+            </div>
+
+            <!-- Color -->
+            <div>
+              <span class="text-xl mr-10 mb-1 font-semibold">Color:</span>
+              <button
+                class="w-6 h-6 rounded-full bg-purple-500 border-2 border-purple-600 mr-2"
+              ></button>
+              <button
+                class="w-6 h-6 rounded-full bg-blue-500 border-2 border-blue-600 mr-2"
+              ></button>
+              <button
+                class="w-6 h-6 rounded-full bg-green-500 border-2 border-green-600 mr-2"
+              ></button>
+              <button
+                class="w-6 h-6 rounded-full bg-black border-2 border-slate-600"
+              ></button>
+            </div>
+
+            <!-- wrist Size -->
+            <div >
+              <h1 class="text-lg font-semibold mb-3">Wrist Size</h1>
+              <button class="btn">S $69</button>
+              <button class="btn">M $79</button>
+              <button class="btn">L $89</button>
+              <button class="btn">XL $99</button>
+            </div>
+
+
+            <div class="flex gap-4 mt-5">
+              <!-- Add button -->
+             <div class="border rounded-lg border-slate-300">
+              <button class="px-4 py-2 text-gray-600 hover:bg-slate-200 quantity-button font-semibold">-</button>
+              <span id="quantity" class="px-4">0</span>
+              <button class="px-4 py-2 text-gray-600 hover:bg-slate-200 quantity-button font-semibold">+</button>
+               </div>
+  
+               <button class="btn bg-purple-500 text-white font-semibold rounded-lg">Add to Cart</button>
+            </div>
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
