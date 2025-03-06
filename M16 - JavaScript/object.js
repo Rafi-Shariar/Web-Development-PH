@@ -29,12 +29,12 @@ subject.greeting = function(){
 
 console.log(subject.ID);
 subject['ID'] = 2345
-console.log(subject['ID']);
-console.log(subject['number']);
+// console.log(subject['ID']);
+// console.log(subject['number']);
 
 
 const keys = Object.keys(subject);
-console.log(keys);
+// console.log(keys);
 
 const values = Object.values(subject);
 // console.log(values);
@@ -53,7 +53,18 @@ const obj2 = { c:"3", d:"4"};
 
 const obj3 = Object.assign( {},obj1,obj2);
 const obj4 = Object.assign(...obj1, ...obj2);
-console.log(obj3);
+// console.log(obj3);
 
 
+
+//--------------------------------------------------------
+const person = {
+    name: "hena",
+    age:10,
+    country:"BD"
+}
+person.status = "Active"; //adding new entry in object
+Object.seal(person); //Cant add new properties anymore
+Object.freeze(person); //Cant add newo property & can modity existing property
+console.log(Object.entries(person));
 
