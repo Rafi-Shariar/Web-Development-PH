@@ -23,18 +23,20 @@
     />
 
     <style>
-      button{
+      button {
         cursor: pointer;
       }
     </style>
   </head>
-  <body class="text-slate-700 h-screen flex flex-col items-center justify-center">
-    <div class="w-8/12  flex  justify-center">
+  <body
+    class="text-slate-700 h-screen flex flex-col items-center justify-center"
+  >
+    <div class="w-8/12 flex justify-center">
       <!-- Container -->
-      <div class="carousel rounded-box w-10/12  bg-slate-100">
+      <div class="carousel rounded-box w-10/12 bg-slate-100">
         <!-- Images -->
         <div class="carousel-item w-1/2">
-          <img src="./images/purple.png" class="w-full" id="image-container"/>
+          <img src="./images/purple.png" class="w-full" id="image-container" />
         </div>
 
         <!-- Details -->
@@ -73,54 +75,123 @@
             <div>
               <span class="text-xl mr-10 mb-1 font-semibold">Color:</span>
               <button
-                class="w-6 h-6 rounded-full bg-purple-500 border-2 border-purple-600 mr-2 color-btn" id="purple"
+                class="w-6 h-6 rounded-full bg-purple-500 border-2 border-purple-600 mr-2 color-btn"
+                id="purple"
               ></button>
               <button
-                class="w-6 h-6 rounded-full bg-blue-500 border-2 border-blue-600 mr-2 color-btn" id="cyan"
+                class="w-6 h-6 rounded-full bg-blue-500 border-2 border-blue-600 mr-2 color-btn"
+                id="cyan"
               ></button>
               <button
-                class="w-6 h-6 rounded-full bg-green-500 border-2 border-green-600 mr-2 color-btn" id="teal"
+                class="w-6 h-6 rounded-full bg-green-500 border-2 border-green-600 mr-2 color-btn"
+                id="teal"
               ></button>
               <button
                 class="w-6 h-6 rounded-full bg-black border-2 border-slate-600 color-btn"
-                id="gray"></button>
+                id="gray"
+              ></button>
             </div>
 
             <!-- wrist Size -->
-            <div >
+            <div>
               <h1 class="text-lg font-semibold mb-3">Wrist Size</h1>
-              <button class="btn" id="Size-S" onclick="WriteSizeCus('S')">S $69</button>
-              <button class="btn" id="Size-L" onclick="WriteSizeCus('L')">L $89</button>
-              <button class="btn" id="Size-M" onclick="WriteSizeCus('M')">M $79</button>
-              <button class="btn" id="Size-XL" onclick="WriteSizeCus('XL')">XL $99</button>
+              <button
+                class="btn size_btn"
+                id="Size-S"
+                onclick="WriteSizeCus('S')"
+              >
+                S $69
+              </button>
+              <button
+                class="btn size_btn"
+                id="Size-L"
+                onclick="WriteSizeCus('L')"
+              >
+                L $89
+              </button>
+              <button
+                class="btn size_btn"
+                id="Size-M"
+                onclick="WriteSizeCus('M')"
+              >
+                M $79
+              </button>
+              <button
+                class="btn size_btn"
+                id="Size-XL"
+                onclick="WriteSizeCus('XL')"
+              >
+                XL $99
+              </button>
             </div>
-
 
             <div class="flex gap-4 mt-5">
               <!-- Quantity button -->
-             <div class="border rounded-lg border-slate-300">
-              <button class="px-4 py-2 text-gray-600 hover:bg-slate-200 quantity-button font-semibold quantity-btn" >-</button>
-              <span id="quantity" class="px-4" id="quantity">0</span>
-              <button class="px-4 py-2 text-gray-600 hover:bg-slate-200 quantity-button font-semibold quantity-btn">+</button>
-               </div>
+              <div class="border rounded-lg border-slate-300">
+                <button
+                  class="px-4 py-2 text-gray-600 hover:bg-slate-200 quantity-button font-semibold quantity-btn"
+                >
+                  -
+                </button>
+                <span id="quantity" class="px-4" id="quantity">0</span>
+                <button
+                  class="px-4 py-2 text-gray-600 hover:bg-slate-200 quantity-button font-semibold quantity-btn"
+                >
+                  +
+                </button>
+              </div>
 
-               <!-- Add Button -->
-               <button class="btn bg-purple-500 text-white font-semibold rounded-lg" id="AddToCardBtn">Add to Cart</button>
+              <!-- Add Button -->
+              <button
+                class="btn bg-purple-500 text-white font-semibold rounded-lg"
+                id="AddToCardBtn"
+              >
+                Add to Cart
+              </button>
             </div>
-
-
           </div>
         </div>
-
-      
-
-
       </div>
-
     </div>
 
     <div id="Checkout-container" class="hidden">
-      <button class="btn bg-orange-600 text-xl m-8 rounded-xl text-white ">Checkout <span id="checkoutAmount" >1</span></button>
+      <button class="btn bg-orange-600 text-xl m-8 rounded-xl text-white" id="CheckoutBtn">
+        Checkout <span id="checkoutAmount">1</span>
+      </button>
+    </div>
+
+
+    <!-- //Cart & Checkout -->
+
+    <div id="cart-modal" class="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center z-50 hidden">
+      <div class="bg-white p-6 rounded-lg shadow-lg w-96 md:w-2/3 lg:w-1/2">
+        <h2 class="text-xl font-bold text-gray-800">Your Cart</h2>
+
+        <!-- Cart Items Table -->
+        <div class="overflow-x-auto mt-4">
+          <table class="min-w-full table-auto">
+            <thead>
+              <tr class="text-left border-b">
+                <th class="py-2 px-4">Item</th>
+                <th class="py-2 px-4">Color</th>
+                <th class="py-2 px-4">Size</th>
+                <th class="py-2 px-4">Quantity</th>
+                <th class="py-2 px-4">Price</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items">
+              <!-- Cart items will go here dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-end gap-2 mt-4">
+          <button id="continue-shopping" class="px-6 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400" > Continue Shopping </button>
+            
+          <button class="px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700" id="checkout">Checkout</button>
+        </div>
+      </div>
     </div>
 
     <script src="./script.js"></script>
