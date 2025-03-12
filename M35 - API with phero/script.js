@@ -10,10 +10,16 @@ function logCategories(){
 
 function displayCatagory(categories){
 
-    for(const cat of categories){
-        
-        
-    }
+    const categatory_container = document.getElementById('categatory-container');
 
+    for(let cat of categories){
+
+        const categatoryDiv = document.createElement('div');
+        categatoryDiv.innerHTML = `
+        <button class="btn hover:bg-red-500 hover:text-white">${cat.category}</button>
+        `
+        categatory_container.appendChild(categatoryDiv);
+
+    }
 }
 logCategories();
