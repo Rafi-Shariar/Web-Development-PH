@@ -7,8 +7,8 @@ function logCategories() {
     });
 }
 // for loading Vedio
-function loadVedioes() {
-  fetch("https://openapi.programming-hero.com/api/phero-tube/videos")
+function loadVedioes(videoTitle="") {
+  fetch(`https://openapi.programming-hero.com/api/phero-tube/videos?title=${videoTitle}`)
     .then((res) => res.json())
     .then((data) => {
       displayVedioes(data.videos);
@@ -33,6 +33,15 @@ function loadCategoryVedioes(id){
     
 
 
+}
+
+function loadVedioDetails(id){
+    fetch(`https://openapi.programming-hero.com/api/phero-tube/video/${id}`)
+    .then(res => res.json())
+    .then((data)=>{
+        showVedioDetails(data);
+    })
+    
 }
 
  function buttonHandle(){
@@ -107,6 +116,9 @@ const displayVedioes = (vedioes) => {
 
                     </div>
                   </div>
+                  <div class="text-center mb-4">
+                       <button onclick="loadVedioDetails('${vedio.video_id}')" class="btn btn-wide">Show Details</button>
+                  </div>
                 </div>
 
 
@@ -116,10 +128,31 @@ const displayVedioes = (vedioes) => {
   });
 };
 
+function showVedioDetails(vedio){
+
+    console.log(vedio);
+    
+
+    document.getElementById(`vedioDetails`).showModal();
+
+    const detailsContainer = document.getElementById('detailsContainer');
+    detailsContainer.innerHTML = `
+      <h1 class="text-xl font-semibold">${vedio.video.title}</h2>
+      <p class="text-base">${vedio.video.description}</p>
+    `
+
+
+
+}
 logCategories();
 
 
+document.getElementById('SearchInput').addEventListener('keyup', (e)=>{
 
+    const input = e.target.value;
+    loadVedioes()
+    
+})
 
 
 
@@ -153,4 +186,28 @@ logCategories();
 //         "posted_date": "16278"
 //     },
 //     "description": "Dive into the rhythm of 'Shape of You,' a captivating track that blends pop sensibilities with vibrant beats. Created by Olivia Mitchell, this song has already gained 100K views since its release. With its infectious melody and heartfelt lyrics, 'Shape of You' is perfect for fans looking for an uplifting musical experience. Let the music take over as Olivia's vocal prowess and unique style create a memorable listening journey."
+// }
+
+
+// {
+//     "status": true,
+//     "message": "Successfully fetched the video with video id 'aaac'",
+//     "video": {
+//         "category_id": "1003",
+//         "video_id": "aaac",
+//         "thumbnail": "https://i.ibb.co/NTncwqH/luahg-at-pain.jpg",
+//         "title": "Laugh at My Pain",
+//         "authors": [
+//             {
+//                 "profile_picture": "https://i.ibb.co/XVHM7NP/kevin.jpg",
+//                 "profile_name": "Kevin Hart",
+//                 "verified": false
+//             }
+//         ],
+//         "others": {
+//             "views": "1.1K",
+//             "posted_date": "13885"
+//         },
+//         "description": "Comedian Kevin Hart brings his unique brand of humor to life in 'Laugh at My Pain.' With 1.1K views, this show offers a hilarious and candid look into Kevin's personal stories, struggles, and triumphs. It's a laugh-out-loud experience filled with sharp wit, clever insights, and a relatable charm that keeps audiences coming back for more."
+//     }
 // }
