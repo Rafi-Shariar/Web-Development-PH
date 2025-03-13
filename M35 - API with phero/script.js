@@ -22,9 +22,12 @@ function loadCategoryVedioes(id){
     fetch(url)
     .then(res => res.json())
     .then((data) => {
-        // console.log(data.category);
-        // displayVedioes(data.category)
+        
+        buttonHandle();
+        const clickedButton = document.getElementById(`${id}`).classList.add('active')
+        
         displayVedioes(data.category);
+
         
     })
     
@@ -32,21 +35,52 @@ function loadCategoryVedioes(id){
 
 }
 
+ function buttonHandle(){
+
+    const AllBtn = document.querySelectorAll(`#categatory-container .btn`);
+    
+    AllBtn.forEach(btn => {
+        btn.classList.remove(`active`);
+    })
+    
+
+}
+
+
+
+
+
 function displayCatagory(categories) {
   const categatory_container = document.getElementById("categatory-container");
   for (let cat of categories) {
     const categatoryDiv = document.createElement("div");
     categatoryDiv.innerHTML = `
-        <button class="btn hover:bg-red-500 hover:text-white" onclick = "loadCategoryVedioes(${cat.category_id})">${cat.category}</button>
+        <button class="btn hover:bg-red-500 hover:text-white" onclick = "loadCategoryVedioes(${cat.category_id})" id="${cat.category_id}">${cat.category}</button>
         `;
     categatory_container.appendChild(categatoryDiv);
   }
 }
 
 const displayVedioes = (vedioes) => {
+
+    NoContent = document.getElementById('NoContent').classList.add('hidden');
+    
   const vedio_container = document.getElementById("Vedio-Container");
   vedio_container.innerHTML = ``;
-  
+
+  if(vedioes.length == 0){
+
+        vedio_container.innerHTML = `
+        <div id="NoContent" class="text-center">
+
+          <img src="./Icon.png" alt="" class="mx-auto ">
+          <h1 class="text-4xl font-semibold">Opps Sorry !! There is no vedio here</h1>
+
+        </div>
+        `
+        return;
+  }
+
   vedioes.forEach((vedio) => {
     const vedioCard = document.createElement("div");
     vedioCard.innerHTML = `
@@ -83,6 +117,23 @@ const displayVedioes = (vedioes) => {
 };
 
 logCategories();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // loadVedioes();
 
 // {
