@@ -1,66 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M35 - API with PheroTube
-    </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M35 - API with PheroTube</title>
 
     <!-- Daisy Ui + Tailwind -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="w-10/12 mx-auto">
-        <!-- navbar -->
-         <nav class="flex justify-between mt-5">
-            <img src="./Logo.png" alt="">
-            <button class="btn">Sort By View</button>
-            <button class="btn bg-red-500 text-white">Blog</button>
-         </nav>
+      <!-- navbar -->
+      <nav class="flex justify-between mt-5">
+        <img src="./Logo.png" alt="" />
+        <button class="btn">Sort By View</button>
+        <button class="btn bg-red-500 text-white">Blog</button>
+      </nav>
     </header>
 
     <!-- Main -->
-     <main>
-        <!-- Navigation buttons -->
-         <!-- dainamically Adding button from API -->
-         <div class="mt-12 w-10/12 mx-auto flex gap-9 justify-center" id="categatory-container">
-            <button class="btn bg-red-500 hover:bg-red-500 hover:text-white">All</button>
-         </div>
+    <main>
+      <!-- Navigation buttons -->
+      <!-- dainamically Adding button from API -->
+      <div
+        class="mt-12 w-10/12 mx-auto flex gap-9 justify-center"
+        id="categatory-container">
+        <button class="btn bg-red-500 hover:bg-red-500 hover:text-white">
+          All
+        </button>
+      </div>
 
-         <!-- Content Container -->
-          <div id="Vedio-Container">
+      <!-- Content Container -->
+      <div class="w-11/12 mx-auto mt-16">
+        <div id="Vedio-Container" class="grid grid-cols-1 md:grid-cols-4 gap-5">
+        </div>
+      </div>
+    </main>
 
-            <div>
-               <div class="card bg-base-100 w-96 shadow-sm">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes" />
-                  </figure>
-
-                  <div class="card-body">
-                    <div class="flex gap-5">
-                     <div id="author-details">
-                        <img src="." alt="">
-                     </div>
-                     <h2 class="card-title"></h2>
-                    </div>
-                    <div id="View-details">
-
-                     <h2>Awlad Hossain</h2>
-                     <h3>91k Views</h3>
-
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-          </div>
-     </main>
-    
-
-     <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

@@ -1,58 +1,71 @@
-
 //for laoding categorier
-function logCategories(){
-    fetch('https://openapi.programming-hero.com/api/phero-tube/categories')
-    .then(res => res.json())
-    .then(data => {
-        displayCatagory(data.categories);
-    })
-    
+function logCategories() {
+  fetch("https://openapi.programming-hero.com/api/phero-tube/categories")
+    .then((res) => res.json())
+    .then((data) => {
+      displayCatagory(data.categories);
+    });
 }
 // for loading Vedio
-function loadVedioes(){
-    fetch('https://openapi.programming-hero.com/api/phero-tube/videos')
-    .then(res => res.json())
-    .then((data)=>{
-        displayVedioes(data.videos);
-    })
-
-}
-
-
-function displayCatagory(categories){
-    const categatory_container = document.getElementById('categatory-container');
-    for(let cat of categories){
-
-        const categatoryDiv = document.createElement('div');
-        categatoryDiv.innerHTML = `
-        <button class="btn hover:bg-red-500 hover:text-white">${cat.category}</button>
-        `
-        categatory_container.appendChild(categatoryDiv);
-
-    }
-}
-
-const displayVedioes=(vedioes)=>{
-
-    const vedio_container = document.getElementById('Vedio-Container');
-    vedioes.forEach(vedio => {
-        //creating element
-        const vedioCard = document.createElement('div');
-        vedioCard.innerHTML = `
-
-        `
-        
+function loadVedioes() {
+  fetch("https://openapi.programming-hero.com/api/phero-tube/videos")
+    .then((res) => res.json())
+    .then((data) => {
+      displayVedioes(data.videos);
     });
-
 }
 
+function displayCatagory(categories) {
+  const categatory_container = document.getElementById("categatory-container");
+  for (let cat of categories) {
+    const categatoryDiv = document.createElement("div");
+    categatoryDiv.innerHTML = `
+        <button class="btn hover:bg-red-500 hover:text-white">${cat.category}</button>
+        `;
+    categatory_container.appendChild(categatoryDiv);
+  }
+}
+
+const displayVedioes = (vedioes) => {
+  const vedio_container = document.getElementById("Vedio-Container");
+  vedioes.forEach((vedio) => {
+    //creating element
+    const vedioCard = document.createElement("div");
+    vedioCard.innerHTML = `
+        
+               <div class="card bg-base-100 h-80 shadow-sm">
+                  <figure>
+                    <img
+                      src="${vedio.thumbnail}" />
+                  </figure>
+
+                  <div class="card-body">
+                    <div class="flex gap-5">
+                     <div class="avatar">
+                         <div class="w-12 rounded-full">
+                             <img src="${vedio.authors[0].profile_picture}" />
+                         </div>
+                    </div>
+                     <h2 class="card-title">${vedio.title}</h2>
+                    </div>
+                    <div id="View-details">
+
+                     <h2>${vedio.authors[0].profile_name}</h2>
+                     <h3>${vedio.others.views}</h3>
+
+                    </div>
+                  </div>
+                </div>
 
 
+        `;
 
+    vedio_container.append(vedioCard);
+  });
+};
 
 logCategories();
 loadVedioes();
-
 
 // {
 //     "category_id": "1001",
