@@ -1,0 +1,11 @@
+.country{
+    padding: 10px;
+    border: 2px solid peru;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.visited-con{
+    background-color: aquamarine;
+    color: brown;
+}
