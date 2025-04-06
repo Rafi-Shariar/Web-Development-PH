@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "cover": "https://picsum.photos/id/1011/800/400",
+      "title": "Understanding JavaScript Closures",
+      "author_img": "https://randomuser.me/api/portraits/women/44.jpg",
+      "author": "Alice Johnson",
+      "posted_date": "2025-03-01",
+      "reading_time": 5,
+      "hashtags": ["JavaScript", "WebDev", "Programming"]
+    },
+    {
+      "id": 2,
+      "cover": "https://picsum.photos/id/1025/800/400",
+      "title": "A Guide to Responsive Web Design",
+      "author_img": "https://randomuser.me/api/portraits/men/45.jpg",
+      "author": "Tom Baker",
+      "posted_date": "2025-03-03",
+      "reading_time": 7,
+      "hashtags": ["CSS", "HTML", "ResponsiveDesign"]
+    },
+    {
+      "id": 3,
+      "cover": "https://picsum.photos/id/1035/800/400",
+      "title": "10 Tips for Writing Clean Code",
+      "author_img": "https://randomuser.me/api/portraits/women/46.jpg",
+      "author": "Sara Lee",
+      "posted_date": "2025-02-28",
+      "reading_time": 6,
+      "hashtags": ["CleanCode", "BestPractices", "Coding"]
+    },
+    {
+      "id": 4,
+      "cover": "https://picsum.photos/id/1041/800/400",
+      "title": "Intro to Tailwind CSS",
+      "author_img": "https://randomuser.me/api/portraits/men/46.jpg",
+      "author": "James Kim",
+      "posted_date": "2025-02-25",
+      "reading_time": 4,
+      "hashtags": ["TailwindCSS", "WebDev", "Frontend"]
+    },
+    {
+      "id": 5,
+      "cover": "https://picsum.photos/id/1043/800/400",
+      "title": "Mastering Git and GitHub",
+      "author_img": "https://randomuser.me/api/portraits/women/47.jpg",
+      "author": "Nina Patel",
+      "posted_date": "2025-02-22",
+      "reading_time": 8,
+      "hashtags": ["Git", "GitHub", "VersionControl"]
+    },
+    {
+      "id": 6,
+      "cover": "https://picsum.photos/id/1045/800/400",
+      "title": "React State Management Simplified",
+      "author_img": "https://randomuser.me/api/portraits/men/47.jpg",
+      "author": "Daniel Green",
+      "posted_date": "2025-03-04",
+      "reading_time": 7,
+      "hashtags": ["React", "JavaScript", "State"]
+    },
+    {
+      "id": 7,
+      "cover": "https://picsum.photos/id/1051/800/400",
+      "title": "Learning Python for Beginners",
+      "author_img": "https://randomuser.me/api/portraits/women/48.jpg",
+      "author": "Emily Chen",
+      "posted_date": "2025-03-05",
+      "reading_time": 10,
+      "hashtags": ["Python", "Programming", "Beginner"]
+    },
+    {
+      "id": 8,
+      "cover": "https://picsum.photos/id/1062/800/400",
+      "title": "Node.js Crash Course",
+      "author_img": "https://randomuser.me/api/portraits/men/48.jpg",
+      "author": "Omar Reyes",
+      "posted_date": "2025-03-06",
+      "reading_time": 6,
+      "hashtags": ["NodeJS", "Backend", "JavaScript"]
+    },
+    {
+      "id": 9,
+      "cover": "https://picsum.photos/id/1069/800/400",
+      "title": "Top 5 Database Systems to Learn",
+      "author_img": "https://randomuser.me/api/portraits/women/49.jpg",
+      "author": "Linda Scott",
+      "posted_date": "2025-03-07",
+      "reading_time": 5,
+      "hashtags": ["Database", "MySQL", "MongoDB", "PostgreSQL"]
+    },
+    {
+      "id": 10,
+      "cover": "https://picsum.photos/id/1074/800/400",
+      "title": "Getting Started with Docker",
+      "author_img": "https://randomuser.me/api/portraits/men/49.jpg",
+      "author": "Mark Woods",
+      "posted_date": "2025-03-08",
+      "reading_time": 9,
+      "hashtags": ["Docker", "DevOps", "Containers"]
+    },
+    {
+      "id": 11,
+      "cover": "https://picsum.photos/id/1080/800/400",
+      "title": "Building REST APIs with Express",
+      "author_img": "https://randomuser.me/api/portraits/women/50.jpg",
+      "author": "Rachel Adams",
+      "posted_date": "2025-03-09",
+      "reading_time": 8,
+      "hashtags": ["ExpressJS", "API", "NodeJS"]
+    },
+    {
+      "id": 12,
+      "cover": "https://picsum.photos/id/1081/800/400",
+      "title": "GraphQL vs REST: What to Choose?",
+      "author_img": "https://randomuser.me/api/portraits/men/50.jpg",
+      "author": "Leo Martinez",
+      "posted_date": "2025-03-10",
+      "reading_time": 6,
+      "hashtags": ["GraphQL", "REST", "API"]
+    }
+  ]
+  
