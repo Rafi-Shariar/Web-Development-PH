@@ -8,4 +8,4 @@ const ErrorPage = () => {
     );
 };
 
-export default ErrorPage;<h1>Page not Found</h1>
+export default ErrorPage;
