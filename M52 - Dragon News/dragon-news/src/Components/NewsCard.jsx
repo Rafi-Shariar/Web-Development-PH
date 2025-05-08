@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
 
     const formattedDate = new Date(news.author.published_date).toLocaleDateString();
+    
   return (
     <div className="border border-slate-300">
       <div className="flex gap-2 items-center bg-base-200 p-2">
@@ -22,7 +24,10 @@ const NewsCard = ({ news }) => {
           className="rounded-2xl w-full mt-4"
         />
 
-        <p className="text-accent mt-5">{news.details}</p>
+        <p className="text-accent mt-5">{news.details.length > 200 ? (<>
+            {news.details.slice(0,200)}...
+            <Link to={`/news-details/${news.id}`} className="font-semibold text-blue-600 cursor-pointer">Read More</Link>
+        </>) : news.details}</p>
 
         <div className="flex w-full flex-col">
           <div className="divider"></div>
