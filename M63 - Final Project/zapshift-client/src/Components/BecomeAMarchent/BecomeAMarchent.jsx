@@ -10,7 +10,7 @@ const BecomeAMarchent = () => {
                 <p className='text-sm text-slate-300 my-6 max-w-[400px]'>We offer the lowest delivery charge with the highest value along with 100% safety of your product. Pathao courier delivers your parcels in every corner of Bangladesh right on time.</p>
 
                 <button className='btn btn-primary text-black rounded-2xl'>Become a Merchant</button>
-                <button className='btn btn-dash  ml-3 text-black rounded-2xl'>Earn with Profast Courier</button>
+                <button className='btn btn-dash  ml-3 text-primary rounded-2xl'>Earn with Profast Courier</button>
 
             </div>
 
