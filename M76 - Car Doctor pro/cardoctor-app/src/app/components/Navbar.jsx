@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from '../assets/icons/check.svg';
+import { signOut, useSession } from "next-auth/react";
 const Navbar = () => {
+
+  const {data:session, status} = useSession();
 
     const navMenu = <>
 
@@ -53,7 +58,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">CarDoctor Pro</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -64,8 +69,12 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="mx-12">
-            <Link href={'/login'}> <button className="btn btn-soft btn-error mr-6">Login</button></Link>
-            <Link href={'/register'}> <button className="btn btn-soft btn-warning">Register</button></Link>
+            { status == "authenticated" ? (<>
+               <button onClick={()=> signOut()} className="btn btn-outline bg-red-200 btn-error mr-6">Logout</button>
+            
+            </>) : (<>  <Link href={'/login'}> <button className="btn btn-soft btn-error mr-6">Login</button></Link>
+            <Link href={'/register'}> <button className="btn btn-soft btn-warning">Register</button></Link></>)}
+           
           </div>
           <a className="btn btn-error btn-outline">Appointment</a>
         </div>
