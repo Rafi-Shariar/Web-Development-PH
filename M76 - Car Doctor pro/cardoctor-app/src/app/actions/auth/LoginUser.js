@@ -11,7 +11,9 @@ export const loginUser = async (payload) =>{
 
     if(!user) return null;
 
-    const isPasswordOK = bcrypt.compare(user.password, password);
+    const isPasswordOK = await bcrypt.compare(password, user.password);
+    console.log(isPasswordOK);
+    
     if(!isPasswordOK) return null;
 
     return user;

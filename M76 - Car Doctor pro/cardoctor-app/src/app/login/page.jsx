@@ -1,6 +1,6 @@
 import React from 'react';
-import { FcGoogle } from 'react-icons/fc';
 import LoginForm from './components/LoginForm';
+import GoogleLogin from './components/GoogleLogin';
 
 const Login = () => {
   return (
@@ -19,12 +19,10 @@ const Login = () => {
               <span className="bg-white px-2 text-gray-500">Or continue with</span>
             </div>
           </div>
-          <button
-            className="mt-4 w-full py-2 px-4 flex items-center justify-center border border-gray-300 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <FcGoogle className="mr-2 text-xl" />
-            Sign in with Google
-          </button>
+          <div>
+            <GoogleLogin/>
+          </div>
+         
         </div>
       </div>
     </div>
